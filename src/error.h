@@ -3,6 +3,8 @@
 
 #include "main.h"
 
+#define APPING_ERROR_MESSAGE_MAXLEN 256
+
 class AppingError
 {
 public:
@@ -15,6 +17,6 @@ private:
     const char* message;
 };
 
-static AppingError appingError;
+extern "C" AppingError appingError; // Default error handler
 
 #endif // ERROR_H

@@ -22,3 +22,5 @@ void AppingError::showText()
 {
     std::cout << "apping: " << message << "\n";
 }
+
+AppingError appingError;

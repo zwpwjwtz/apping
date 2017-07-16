@@ -18,7 +18,10 @@ SOURCES += main.cpp \
     subsystem/reinstall.cpp \
     subsystem/uninstall.cpp \
     error.cpp \
-    main.cpp
+    main.cpp \
+    backend/inst_launcher.cpp \
+    backend/apt_launcher.cpp \
+    config.cpp
 
 HEADERS += \
     main.h \
@@ -40,4 +43,7 @@ HEADERS += \
     i18n.h \
     main.h \
     subsystem/uninstall.h \
-    subsystem/reinstall.h
+    subsystem/reinstall.h \
+    backend/inst_launcher.h \
+    backend/apt_launcher.h \
+    config.h

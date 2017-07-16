@@ -2,7 +2,7 @@ CPP  = g++
 CC   = g++
 
 ifndef SRCDIR
-SRCDIR = $(PWD)
+SRCDIR := $(PWD)
 endif
 
 ifndef OBJDIR
@@ -14,7 +14,7 @@ ifndef BINDIR
 BINDIR = $(OBJDIR)
 endif
 
-SUBDIRS = subsystem
+SUBDIRS = backend subsystem
 
 INCLUDE =
 LIBS =
@@ -24,7 +24,7 @@ OBJ    = $(patsubst %.cpp, $(OBJDIR)/%.o, $(notdir $(SOURCE))) \
 BIN    = $(BINDIR)/apping
 
 CXXFLAGS =
-CFLAGS   = -Wall -g
+CFLAGS   = -Wall -std=c++0x
 
 MAKE = make
 MKDIR = mkdir -p
